@@ -30,5 +30,9 @@ RUN \
 # Export PATH
 ENV PATH=$PATH:/root/.pyenv/bin:/root/.pyenv/shims
 
+RUN \
+  pip3 install pylint git-lint && \
+  pip3 install -U distribute;
+
 VOLUME ["/sys/fs/cgroup"]
 CMD  ["/lib/systemd/systemd"]
