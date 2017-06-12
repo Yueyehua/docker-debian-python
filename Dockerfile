@@ -24,4 +24,4 @@ RUN \
   pip3 install -U distribute;
 
 VOLUME ["/sys/fs/cgroup"]
-CMD  ["/lib/systemd/systemd"]
+CMD  ["/bin/bash"]
